@@ -21,8 +21,8 @@ const BookAppointmentSection = () => {
         ></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto relative group">
+      <div className=" mx-auto px-4 relative z-10">
+        <div className="max-w-6xl mx-auto relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-pink-500/30 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-1000"></div>
           <div className="relative glass-card rounded-2xl p-10 md:p-12 shadow-xl backdrop-blur-md bg-white/80 border border-white/40">
             <div className="text-center">
