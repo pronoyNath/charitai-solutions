@@ -78,7 +78,7 @@ const Navbar = () => {
           <MobileMenu />
         </nav>
 
-        <div className=" ml-auto flex items-center gap-2 md:gap-10 lg:m-0">
+        <div className=" ml-auto flex items-center gap-3 md:gap-10 lg:m-0">
           <button
           onClick={()=>navigate("/contact-us")}
             type="submit"

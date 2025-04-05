@@ -24,7 +24,7 @@ const Banner = () => {
           animateBy="words"
           direction="top"
           // onAnimationComplete={handleAnimationComplete}
-          className="text-5xl md:text-6xl lg:text-7xl mb-8 text-center "
+          className="text-6xl lg:text-7xl mb-8 text-center "
         />
       </div>
       <div className="max-w-4xl mx-auto text-center text-sm md:text-base lg:text-lg">
