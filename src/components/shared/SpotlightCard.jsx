@@ -34,8 +34,8 @@ const SpotlightCard = ({ children, className = "", spotlightColor = "rgba(255, 2
   return (
     <div
       ref={divRef}
-      // onMouseMove={handleMouseMove}
-      // onFocus={handleFocus}
+      onMouseMove={handleMouseMove}
+      onFocus={handleFocus}
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

@@ -44,35 +44,35 @@ import {
     {
       id: "0",
       title: "Home",
-      url: "#features",
+      url: "/",
     },
     {
       id: "1",
       title: "Youtube",
-      url: "#pricing",
+      url: "/youtube",
     },
     {
       id: "2",
       title: "Book a call",
-      url: "#how-to-use",
+      url: "/contact-us",
     },
     {
       id: "3",
       title: "About",
-      url: "#roadmap",
+      url: "/about-us",
     },
     {
       id: "4",
       title: "Solutions",
-      url: "#signup",
+      url: "/solutions-list",
     //   onlyMobile: true,
     },
-    {
-      id: "5",
-      title: "Sign in",
-      url: "#login",
-      onlyMobile: true,
-    },
+    // {
+    //   id: "5",
+    //   title: "Sign in",
+    //   url: "#login",
+    //   onlyMobile: true,
+    // },
   ];
   
   export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

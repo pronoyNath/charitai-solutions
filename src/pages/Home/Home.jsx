@@ -1,14 +1,18 @@
-import React from "react";
 import Banner from "./Banner";
 import Sponsors from "./Sponsors";
-import Solutions from "./Solutions";
+import BusinessToAi from "../../components/design/BusinessToAi";
+import OurBuinessSoultions from "../../components/design/Solutions/OurBuinessSolutions";
+import BookAppointmentSection from "../../components/design/BookAppoinment/BookAppointmentSection";
 
 const Home = () => {
   return (
-    <div className="py-24 px-10">
+    <div className=" ">
       <Banner />
       <Sponsors />
-      <Solutions />
+      <BusinessToAi/>
+      <OurBuinessSoultions/>
+      <BookAppointmentSection/>
+      {/* <Solutions /> */}
     </div>
   );
 };
