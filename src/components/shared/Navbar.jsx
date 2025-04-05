@@ -78,11 +78,11 @@ const Navbar = () => {
           <MobileMenu />
         </nav>
 
-        <div className=" ml-auto flex items-center gap-10 lg:m-0">
+        <div className=" ml-auto flex items-center gap-2 md:gap-10 lg:m-0">
           <button
           onClick={()=>navigate("/contact-us")}
             type="submit"
-            className="flex justify-center gap-2 items-center mx-auto  text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border rounded-full group"
+            className="flex justify-center gap-1 lg:gap-2 items-center mx-auto text-xs md:text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-2 md:px-4 py-1 md:py-2 overflow-hidden border rounded-full group"
           >
             Let's talk
             <svg
