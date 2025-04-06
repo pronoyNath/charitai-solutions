@@ -1,9 +1,17 @@
-import React from "react";
 import Navbar from "../components/shared/Navbar";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/shared/Footer";
+import { useEffect } from "react";
 
 const MainLayout = () => {
+  const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  
   return (
     <div>
       <div className=" h-full w-full bg-white">
@@ -14,7 +22,7 @@ const MainLayout = () => {
         <Outlet />
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
