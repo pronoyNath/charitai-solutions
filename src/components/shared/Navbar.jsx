@@ -45,7 +45,7 @@ const Navbar = () => {
               <img src={logo} className="h-12" alt="logo" />
             </a>
             <h3 className=" font-semibold">
-              Charitai
+              CharitAI
               <span className="block bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Solutions
               </span>

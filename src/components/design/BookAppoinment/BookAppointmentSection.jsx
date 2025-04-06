@@ -1,8 +1,11 @@
 import { Phone, PhoneOutgoing } from "lucide-react";
 import { curve } from "../../../assets";
 import BtnCheck from "./BtnCheck";
+import { useNavigate } from "react-router-dom";
 
 const BookAppointmentSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="book-appointment" className="py-24 relative overflow-hidden">
       {/* Glass blur background with animated gradient */}
@@ -21,10 +24,10 @@ const BookAppointmentSection = () => {
         ></div>
       </div>
 
-      <div className=" mx-auto px-4 relative z-10">
+      <div className=" mx-auto px-0 lg:px-4 relative z-10">
         <div className="max-w-6xl mx-auto relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-pink-500/30 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition duration-1000"></div>
-          <div className="relative glass-card rounded-2xl p-10 md:p-12 shadow-xl backdrop-blur-md bg-white/80 border border-white/40">
+          <div className="relative glass-card rounded-2xl p-7 lg:p-10 md:p-12 shadow-xl backdrop-blur-md bg-white/80 border border-white/40">
             <div className="text-center">
               <div className="inline-block relative text-center ">
                 <h3 className="text-4xl font-semibold py-5">
@@ -39,7 +42,9 @@ const BookAppointmentSection = () => {
               </p>
               <div>
               <div className="relative group">
-            <button className="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+            <button
+            onClick={() => navigate("/contact-us")}
+            className="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
               <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
 
               <span className="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">

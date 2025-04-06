@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 
 
 const BtnCheck = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="group relative flex justify-center items-center text-white text-sm font-bold">
@@ -76,7 +78,9 @@ const BtnCheck = () => {
           </div>
         </div> */}
 
-        <div className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-3 rounded-full cursor-pointer duration-300">
+        <div 
+        onClick={() => navigate("/contact-us")}
+        className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-3 rounded-full cursor-pointer duration-300">
           <svg
             fill="none"
             viewBox="0 0 24 24"

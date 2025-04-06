@@ -13,7 +13,7 @@ const Footer = () => {
                   <img src={logo} className="h-12" alt="logo" />
                 </a>
                 <h3 className=" font-semibold">
-                  Charitai
+                  CharitAI
                   <span className="block bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                     Solutions
                   </span>
@@ -29,15 +29,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex items-center">
+              <div className="flex items-center hover:underline">
                 <Mail size={18} className="mr-3 text-purple-300" />
                 <span>info@charitaisolutions.com</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center hover:underline">
                 <Phone size={18} className="mr-3 text-purple-300" />
                 <span>+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center hover:underline">
                 <MapPin size={18} className="mr-3 text-purple-300" />
                 <span>123 AI Boulevard, Tech City, TC 10101</span>
               </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 Our Story
               </a>
               <a
-                href="#explore-ai"
+                href="#solutions"
                 className="hover:text-purple-300 transition-colors"
               >
                 Explore AI

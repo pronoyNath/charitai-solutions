@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   MessageSquare,
   BarChart3,
@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 function SolutionDetails() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   
     const solutions = [
       {
@@ -454,6 +456,7 @@ function SolutionDetails() {
                 whileTap={{ scale: 0.95 }}
               >
                 <button
+                onClick={() => navigate("/contact-us")}
                   type="submit"
                   className="flex justify-center gap-2 items-center mx-auto text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-500 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border rounded-full group"
                 >
