@@ -19,7 +19,7 @@ const Banner = () => {
       <div>
         {/* title showing  */}
         <BlurText
-          text="Charitai Solutions"
+          text="CharitAI Solutions"
           delay={150}
           animateBy="words"
           direction="top"
